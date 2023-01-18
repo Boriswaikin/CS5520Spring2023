@@ -6,12 +6,12 @@ import Header from './components/Header';
 
 
 export default function App() {
-  // const name = "my awesome app" 
+  const name = "my awesome app" 
   return (
     <View style={styles.container}>
       <Text></Text>
       <StatusBar style="auto" />
-      <Header name = "my awesome app!"/>
+      <Header appName = {name} />
     </View>
   );
 }
