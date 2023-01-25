@@ -18,7 +18,8 @@ export default function App() {
     <View style = {styles.container}>
       <Text></Text>
       <StatusBar style="auto" />
-      <Header name = {name} />
+      <Header
+      name = {name} />
       <Input 
         modalvisible={modalvisible}
         sendChangedText = {sendChangedText}
@@ -39,4 +40,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  Header :{
+    borderWidth:1,
+    borderColor:'rebeccapurple',
+    color:'rebeccapurple'
+  }
 });

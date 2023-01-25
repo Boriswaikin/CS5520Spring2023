@@ -1,4 +1,4 @@
-import { View, TextInput,Button, Modal, StyleSheet} from 'react-native'
+import { View, TextInput,Button, Modal,Image, StyleSheet} from 'react-native'
 import { useState } from 'react';
 import React from 'react'
 
@@ -16,7 +16,7 @@ const Input = ({sendChangedText,modalvisible,CancelPressed}) => {
       <TextInput 
       value={text}
       onChangeText={changeTextHandler}
-      style = {{backgroundColor : "red"}}/>
+      style = {{color:'purple'}}/>
       <Button title="Confirm"
       onPress={()=>{
         sendChangedText(text);
@@ -32,7 +32,7 @@ const Input = ({sendChangedText,modalvisible,CancelPressed}) => {
         />
       <Image
         style={{ width: 150, height: 150 }}
-        source={require('./image/image.png')}
+        source={require('../image/image.png')}
         />
     </View>
     </Modal>
