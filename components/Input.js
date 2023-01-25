@@ -1,4 +1,4 @@
-import { View, TextInput} from 'react-native'
+import { View, TextInput,Button} from 'react-native'
 import { useState } from 'react';
 import React from 'react'
 
@@ -6,7 +6,7 @@ const Input = ({sendChangedText}) => {
     const [text,setText] = useState();
     function changeTextHandler(changedText){
       setText(changedText);
-      sendChangedText(changedText);
+      //sendChangedText(changedText);
     }
   return (
     <View>
@@ -14,6 +14,11 @@ const Input = ({sendChangedText}) => {
       value={text}
       onChangeText={changeTextHandler}
       style = {{backgroundColor : "red"}}/>
+      <Button title="Confirm"
+      onPress={()=>{
+        sendChangedText(text);
+        setText("");
+      }}/>
     </View>
   )
 }
