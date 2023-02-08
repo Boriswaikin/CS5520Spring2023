@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
   Header :{
     borderWidth:1,
     borderColor:'rebeccapurple',
-    
   }
 });
 
